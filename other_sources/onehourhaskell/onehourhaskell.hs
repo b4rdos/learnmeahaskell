@@ -1,51 +1,62 @@
--- Single line comment
-{-
- - Multiline comments
+-- Single hile comment
+{- 
+    Multiline comment
 -}
 
 import Data.List
 import System.IO
 
--- Data Types
--- Haskell is statically typed and tries to guess the type if it's not explicitly defined
-
+-- Types
 -- Int -2^63 2^63
-minInt = minBound :: Int
 maxInt = maxBound :: Int
+minInt = minBound :: Int
 
--- Integer (unbounded; limitted by memory)
-
+-- Integer unbounded
 -- Float
--- Double ( 11 decimals precision without loss of info)
-bigFloat = 3.99999999999 + 0.00000000005 -- 4.00000000004
-bigFloat2 = 3.999999999999 + 0.000000000005 -- 4.0000000000039995
-
--- Bool True False
+-- Double 11 points precision
+-- Bool
 -- Char '
--- Tuple () -- Usually two items
+-- Tuple ()
 
--- Permanent value of variable
+-- Haskell can infer types but one can define the data, ie
 always5 :: Int
 always5 = 5
 
--- Arithmetic Operations
-sumOp = 5 + 4
-negNumOp = 5 + (-13) -- needs the parenthesis
-subOp = 8 - 13
-mulOp = 5 * 3
-divOp = 6 / 3 -- 2.0
 
-modOp =  mod 13 2
-modOp2 = 13 `mod` 2 -- same as modOp; using infix version
-intDivOp = 3 `div` 2 -- 2
-
-powOp = 3 ^ 3 -- 81
-powOp2 = 3 ** 3 -- 81.0
-powOp3 = 9 ** 0.5 -- 3.0
-
-sqrtOp = sqrt 9 -- 3.0
-
-
--- Arithmetic functions
-sumOfNums = sum [1..1000]
+-- Operations
+sumOfNums = sum [1..100]
 prodOfNums = product [1..10]
+addEx = 5 + 4
+subEx = 3 - 2
+multEx = 5 * 3
+divEx = 3 / 4
+
+-- prefix operators that can be infix
+modEx = mod 5 4
+modEx2 = 5 `mod` 4
+
+-- adding a negative number
+negNumEx = 5 + (-1)
+
+-- Converting Float to Int for use in functions
+-- ex `sqrt` expects a float
+num9 = 9 :: Int
+root9 = sqrt (fromIntegral num9)
+
+
+-- Built In math functions
+piVal = pi
+ePow9 = exp 9
+logOf9 = log 9
+int3Pow4 = 3^4
+float3Pow4 = 3**4
+sqrtOf3 = 3**0.5
+truncVal = truncate 9.999 -- 9
+roundVal = round 9.999 -- 10
+ceilingVal = ceiling 9.999 -- 10
+floorVal = floor 9.999 -- 9
+negFloorVal = floor -9.999 -- -10
+
+-- Others include
+-- sin, cos, tan, asin, atan, acos, sinh
+-- tanh, cosh, asinh, atanh, acosh
