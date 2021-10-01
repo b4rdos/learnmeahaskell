@@ -23,36 +23,18 @@ always5 :: Int
 always5 = 5
 
 -- Arithmetic Operations
-addOp = 5 + 4
-negNumOp = 5 + (-13) -- needs the parenthesis
-subOp = 8 - 13
-mulOp = 5 * 3
-divOp = 6 / 3 -- 2.0
-
-modOp =  mod 13 2
-modOp2 = 13 `mod` 2 -- same as modOp; using infix version
-intDivOp = 3 `div` 2 -- 2
-
-powOp = 3 ^ 3 -- 81
-powOp2 = 3 ** 3 -- 81.0
-powOp3 = 9 ** 0.5 -- 3.0
-
-sqrtOp = sqrt 9 -- 3.0
-
->>>>>>> Stashed changes
-
--- Operations
-sumOfNums = sum [1..100]
-prodOfNums = product [1..10]
-<<<<<<< Updated upstream
 addEx = 5 + 4
 subEx = 3 - 2
 multEx = 5 * 3
 divEx = 3 / 4
 
+sumOfNums = sum [1..100]
+prodOfNums = product [1..10]
+
 -- prefix operators that can be infix
-modEx = mod 5 4
-modEx2 = 5 `mod` 4
+modEx =  mod 13 2
+modEx2 = 13 `mod` 2 -- same as modEx; using infix version
+intDivEx = 3 `div` 2 -- 2
 
 -- adding a negative number
 negNumEx = 5 + (-1)
@@ -79,25 +61,6 @@ negFloorVal = floor -9.999 -- -10
 -- Others include
 -- sin, cos, tan, asin, atan, acos, sinh
 -- tanh, cosh, asinh, atanh, acosh
-=======
-
-num9 :: Int
-num9 = 9
-sqrt9 = (fromIntegral num9)
-
--- Built in math functions
-piVal = pi
-ePow9 = exp 9
-logOf9 = log 9
-
-truncVal = truncate 9.999
-roundVal = round 9.999
-ceiliVal = ceiling 9.999
-floorVal = floor 9.999
-
--- Other funcions
--- sin, cos, tan, asin, acos, atan
--- sinh, cosh, tanh, asinh, acosh, atanh
 
 -- Boolean operations
 trueAndFalse = True && False
